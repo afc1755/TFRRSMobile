@@ -8,14 +8,14 @@
     tools:context=".HomePage">
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/athleteText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Enter Athlete Name"
+        android:hint="Enter Athlete Name"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button3" />
 
@@ -25,19 +25,20 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="Search"
+        android:onClick="athleteSearch"
+        android:text="Search Athletes"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText3" />
+        app:layout_constraintTop_toBottomOf="@+id/athleteText" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/teamText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Enter Team Name"
+        android:hint="Enter Team Name"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button" />
 
@@ -47,9 +48,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="Search"
+        android:onClick="teamSearch"
+        android:text="Search Teams"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+        app:layout_constraintTop_toBottomOf="@+id/teamText" />
 
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/navigation"
@@ -70,14 +72,14 @@
         app:barrierDirection="left" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/meetText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Enter Meet Name"
+        android:hint="Enter Meet Name"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -87,8 +89,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="Search"
+        android:onClick="meetSearch"
+        android:text="Search Meets"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintTop_toBottomOf="@+id/meetText" />
 
 </android.support.constraint.ConstraintLayout>
