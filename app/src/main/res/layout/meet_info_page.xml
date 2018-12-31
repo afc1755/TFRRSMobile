@@ -30,9 +30,9 @@
     <ScrollView
         android:id="@+id/scrollView"
         android:layout_width="368dp"
-        android:layout_height="0dp"
+        android:layout_height="415dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         app:layout_constraintBottom_toTopOf="@+id/navigation"
         app:layout_constraintEnd_toEndOf="parent"
@@ -44,15 +44,18 @@
             android:layout_height="wrap_content">
 
             <TableLayout
-                android:id="@+id/searchTable"
+                android:id="@+id/meetTable"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 tools:layout_editor_absoluteX="142dp"
-                tools:layout_editor_absoluteY="24dp">
+                tools:layout_editor_absoluteY="24dp"
+                android:layout_marginRight="6dp"
+                >
 
                 <TableRow
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="6dp"/>
 
                 <TableRow
                     android:layout_width="match_parent"
@@ -80,5 +83,14 @@
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/meetInfoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="meet info here"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/meetNameTextView" />
 
 </android.support.constraint.ConstraintLayout>
